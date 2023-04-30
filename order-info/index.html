@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--nhúng mã nguồn-->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!--boostrap-->
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="js/jquery-3.6.4.min.js"></script><!--jquery phải đặt trước bootstrap-->
+    <script type="test/javascript" src="js/bootstrap.min.js"></script>
+    <!--Fontawesome icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Giỏ hàng</title>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="wrapper">
+        <div id="wp-content">
+            <div id="header-child">
+                <button type="button" class="btn btn-outline-light"><a href="#">Trở Lại</a></button>
+                <p id="p-thongtindathang" class="title m-auto">Thông tin đặt hàng</p>
+            </div>
+    <!----------------form info------------------>
+            <div class="block-info mt-2">
+                <div class="forminfo container block-box">
+                    <div class="block-customer">
+                        <p class="p-head">Thông tin khách hàng</p>
+                        <form action="" method="post">
+                            <div>
+                                <input class="input-child mb-2" type="text" autofocus placeholder="Họ và tên ( bắt buộc )">
+                                <input class="input-child mb-2" type="text" placeholder="Số điện thoại ( bắt buộc )">
+                                <input class="input-child mb-2" type="text" placeholder="Email nhận hóa đơn VAT">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="block-payment mt-3">
+                        <p class="p-head">Phương thức nhận hàng</p>
+                        <form action="">
+                            <input class="" type="radio" name="chonphuongthucnhanhang" checked onclick="bit_hide(0)" value=""> nhận tại cửa hàng&nbsp;&nbsp;
+                            <input class="" type="radio" name="chonphuongthucnhanhang" onclick="bit_hide(1)" value=""> giao hàng tận nơi
+                        </form>
+                        <div id="info-payment">
+                            <div id="at-store">
+                                <div class="container mt-2">
+                                    <form action="">
+                                        <select class="select-1" name="location" id="">
+                                            <option value="">Địa chỉ cửa hàng</option>
+                                            
+                                                <option value="dd">Nam Đồng, Đống Đa, Hà Nội</option>
+                                            
+                                            
+                                                <option value="lc">Liên Chiễu, Đà Nẵng</option>
+                                            
+                                            
+                                                <option value="q8">Phạm Thái Hiển, phường 7, quận 8, thành phố Hồ Chí Minh</option>
+                                            
+                                            
+                                                <option value="nk">3/2, p.Xuân Khánh, quận Ninh Kiều, Cần Thơ</option>
+                                            
+                                        </select>
+                                    </form>
+                                </div>  
+                            </div>
+                            <div id="ship">
+                                <div class="container mt-2">
+                                    <form action="">
+                                        <select class="select-2" name="" id="province">
+                                        </select>
+                                        <select class="select-2" name="" id="district">
+                                            <option  value="">chọn quận</option>
+                                        </select>
+                                        <select class="select-2" name="" id="ward">
+                                            <option   value="">chọn phường</option>
+                                        </select>
+                                        <input class="select-2 mt-2" type="text" placeholder="số nhà, tên đường">
+                                    </form>
+                                </div>
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                                <script src="./index.js"></script>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    <!---------------footder-child------------------->
+        <div id="footder-child" class="bottom-bar container mt-auto block-box">
+            <div id="footder-child-1" class="row">
+                <div id="text" class="row">
+                    <div class="col-9">Tổng tiền tạm tính:</div>
+                    <div id="sum-money" class="col-3">12.090.000&nbsp;đ</div>
+                </div>
+            </div>
+            <div id="footder-child-2" class="row">
+                <div class="d-grid gap-2">
+                        <button class="btn btn-success" type="button"><strong>TIẾN HÀNH THANH TOÁN</strong></button>
+                        <button class="btn btn-primary" type="button">MUA THÊM SẢN PHẨM</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

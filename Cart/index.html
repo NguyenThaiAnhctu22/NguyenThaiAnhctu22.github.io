@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--nhúng mã nguồn-->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!--boostrap-->
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="js/jquery-3.6.4.min.js"></script><!--jquery phải đặt trước bootstrap-->
+    <script type="test/javascript" src="js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+    <!--Fontawesome icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Giỏ hàng</title>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="wrapper">
+        <div id="wp-content">
+            <div id="header-child">
+                <button type="button" class="btn btn-outline-light"><a href="#">Trở Lại</a></button>
+                <p id="p-giohang" class="title m-auto">Giỏ Hàng</p>
+            </div>
+    <!----------------thẻ sản phẩm------------------>
+            <div id="list">
+                <div id="card">
+                    <div class="product-item under-line mb-3">
+                      <div class="image">
+                        <a href="" class="thumb"><img src="../Cart/data/img/iphone-11-green.jpg" alt=""></a>
+                      </div>
+                      <div class="sidebar-info">
+                            <div class='name-cart'>Iphone-11-green</div>
+                            <span class='cost'>12.090.000&nbsp;đ</span>
+                            <div class='numbers'><p>Số lượng:</p><input type='number'value='1'></div>
+                            <div class='info-sale container'>
+                                <ul class="sale col">
+                                    <li>Tặng Sim 4G Mobifone siêu data 500GB/Tháng - Miễn phí 12 tháng</li>
+                                    <li>Ưu đãi Phòng chờ hạng thương gia</li>
+                                    <li>Giảm ngay 1.000.000đ khi thanh toán qua VNPAY</li>
+                                </ul>
+                            </div>
+                      </div>
+                      <div class="delete">
+                            <button type="button"><i class="fa-solid fa-trash"></i></button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!---------------footder-child------------------->
+        <div id="footder-child" class="bottom-bar container mt-auto block-box">
+            <div id="footder-child-1" class="row">
+                <div id="text" class="row">
+                    <div class="col-9">Tổng tiền tạm tính:</div>
+                    <div id="sum-money" class="col-3">12.090.000&nbsp;đ</div>
+                </div>
+            </div>
+            <div id="footder-child-2" class="row">
+                <div class="d-grid gap-2">
+                    <button class="btn btn-success" type="button"><strong>TIẾN HÀNH ĐẶT HÀNG</strong></button>
+                    <button class="btn btn-primary" type="button">MUA THÊM SẢN PHẨM</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
